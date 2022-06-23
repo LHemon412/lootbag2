@@ -1,0 +1,10 @@
+name: Lootbag2
+version: '${project.version}'
+main: com.github.lhemon412.lootbag2.Lootbag2Plugin
+api-version: 1.18
+authors: [ LHemon412 ]
+commands:
+  lootbag:
+    description: Main command for setting up lootbags.
+    aliases: [ lb ]
+    permission: lootbag2.admin
