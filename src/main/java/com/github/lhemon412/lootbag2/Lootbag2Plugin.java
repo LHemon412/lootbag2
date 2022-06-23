@@ -33,7 +33,7 @@ public final class Lootbag2Plugin extends JavaPlugin {
         if (ver2 >= 13) {
             // 1.13+
             WHITE_STAINED_GLASS_PANE = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
-            BLACK_STAINED_GLASS_PANE = new ItemStack(Material.WHITE_STAINED_GLASS_PANE);
+            BLACK_STAINED_GLASS_PANE = new ItemStack(Material.BLACK_STAINED_GLASS_PANE);
             ENDER_EYE = new ItemStack(Material.ENDER_EYE);
         } else {
             // 1.12 or below
