@@ -30,6 +30,7 @@ public class LanguageManager {
         if (!langSaveDir.exists()) {
             plugin.saveResource("languages/zh_TW.yml", true);
             plugin.saveResource("languages/en.yml", true);
+            plugin.saveResource("languages/zh_CN.yml", true);
         }
 
         for (File langFile : Objects.requireNonNull(langSaveDir.listFiles())) {
@@ -73,7 +74,9 @@ public class LanguageManager {
         langMap.clear();
     }
 
-    public void setLang(String langId) { activeLang = langId; }
+    public void setLang(String langId) {
+        activeLang = langId;
+    }
 
     public String getPrefix() {
         return langMap.get(activeLang).getOrDefault("System.PREFIX", "");
